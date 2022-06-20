@@ -1,0 +1,40 @@
+
+@mixin estiloImg ($animation) {
+        width: 42rem; 
+        border: solid;
+        background-color: $bg3;
+        opacity: 0.6;
+        color: $c2;
+        animation-name: $animation;
+        animation-duration: 3s;
+         animation-delay: 0.3s;
+        animation-fill-mode: forwards;
+}
+.imagen1{
+    p{
+       @include estiloImg (img1);
+
+        @keyframes img1 {
+            from{transform: translateX(0px)
+                translateY(-500px);}
+            to{transform: translateX(250px)
+                translateY(-500px);}
+        }
+    }
+}
+
+.aside{
+    background-color: $bg4;
+    margin-top: 80px;
+    height: max-content;
+    .ultNoticias{
+        a{
+            color: $c3;
+            &:hover{
+                color: $c4;
+            }
+        }
+        
+    }
+}
+

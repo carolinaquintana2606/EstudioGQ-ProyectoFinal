@@ -1,0 +1,46 @@
+.imagen2 {
+    h2{
+    @include estiloImg (img2);
+    }
+}
+
+@keyframes img2 {
+    from{transform: translateY(-400px)
+                    translateX(0px);}
+    to{transform: translateY(-400px)
+                    translateX(400px);}
+}
+
+@mixin colores($bg, $tit, $text)
+{
+    background-color: $bg;
+    h3{
+        color: $tit;
+    }
+    p{
+        color: $text;
+    }
+}
+
+.nosotros{
+    @include colores($bg2, $c1, $c3);
+    
+        p{
+            text-align: justify;
+        }
+}
+
+.valores{
+    background-color: $bg2;
+    h3{
+        color: $c1;
+    }
+    ul{
+        color: $c3;
+        li{
+            &:hover{
+                font-size:x-large; 
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+.footer{
+    background-color: $bg2;
+    color: $c3;
+    .redes{
+        a{
+            img{
+                &:hover{
+                    width: 70px;
+                    height: 80px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,21 @@
+.imagen3{
+    
+        @extend .imagen2;
+    
+    
+}
+
+.noticias{
+    .noticia{
+        background-color: $bg2;
+        &:hover{
+            font-size: 150%;
+        }
+        h3{
+            color: $c1;
+        }
+        h4{
+            color: $c3;
+        }
+    }
+}

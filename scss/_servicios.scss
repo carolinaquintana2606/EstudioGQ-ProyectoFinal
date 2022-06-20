@@ -1,0 +1,15 @@
+.servicios{
+    @include colores ($bg2, $c1, $c3);
+    
+    h4{
+        color: $c1;
+    }
+    
+    ul{
+        color: $c3;
+    }
+}
+
+.ppalesServicios{
+    @extend .valores;
+}

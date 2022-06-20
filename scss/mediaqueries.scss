@@ -1,0 +1,111 @@
+@media screen and (min-width: 0px) and (max-width:767px){
+
+    @mixin imgResponsive ($height){
+        position: relative;
+        margin-right: 0px;
+        .textImg{
+            width: 15rem;
+            height: $height;
+            animation: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        } 
+    }
+
+    .imagen1{
+        @include imgResponsive (7rem);
+        
+     }
+
+     @mixin colores2 ($bg, $tit, $text)
+     {
+        background-color: $bg;
+        h3{
+            color: $tit;
+        }
+        p{
+            color:$text;
+        } 
+     }
+
+     .nosotros{
+        @include colores2($bg5, $c2, $c5);
+        
+     }
+
+     .imagen2{
+        @include imgResponsive (4rem);
+        
+    }
+
+    .valores{
+        background-color: $bg5;
+        h3{
+            color: $c2;
+        }
+        ul{
+            color: $c5;
+        }
+    }
+
+    .servicios{
+        @include colores2($bg5, $c2, $c5);
+        
+        h4{
+            color: $c2;
+        }
+            
+        ul{
+            color: $c5;
+        }
+    }
+
+    .ppalesServicios{
+        background-color: $bg5;
+        h3{
+            color: $c2;
+        }
+        ul{
+            li{
+                color: $c5;
+            }
+            
+        }
+    }
+
+    .imagen3{
+        @include imgResponsive (4rem);
+    }
+    
+}
+
+@media screen and (min-width:768px) and (max-width:1439px){
+    @mixin imgResponsive2($height){
+        position: relative;
+        .textImg{
+            width: 35rem;
+            height: $height;
+            animation: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    .imagen1{
+        @include imgResponsive2(5rem);
+        
+    }
+
+    .imagen2{
+        @include imgResponsive2(4rem);
+        
+    }
+
+    .imagen3{
+        @include imgResponsive2(4rem);
+        
+    }
+}

@@ -1,0 +1,16 @@
+.header{
+    background-color: $bg2;
+    color: $c1;
+    .titulo1{
+        font-size: 4rem;
+    }
+    .titulo2{
+        font-size: 0.75rem;
+    }
+    .nav-link{
+        color: $c2;
+        &:hover{
+            color: $c1;
+        }
+    }
+}
