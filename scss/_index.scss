@@ -1,37 +1,55 @@
 
 @mixin estiloImg ($animation) {
         width: 42rem; 
-        border: solid;
-        background-color: $bg3;
+        /*border: solid;
+        border-style: groove;*/
+        background-color: $bg5;
         opacity: 0.6;
         color: $c2;
         animation-name: $animation;
         animation-duration: 3s;
-         animation-delay: 0.3s;
+         animation-delay: 0.1s;
         animation-fill-mode: forwards;
 }
+
+
 .imagen1{
+    animation-name: imgIndex;
+    animation-duration: 2.4s;
+    animation-delay: 0.3s;
+    animation-fill-mode: forwards;
+
+    @keyframes imgIndex {
+        from{transform: translateX(250px)}
+        to{transform: translateX(0px)}
+    }
     p{
        @include estiloImg (img1);
 
         @keyframes img1 {
             from{transform: translateX(0px)
-                translateY(-500px);}
+                translateY(-400px);}
             to{transform: translateX(250px)
-                translateY(-500px);}
+                translateY(-400px);}
         }
     }
 }
 
 .aside{
-    background-color: $bg4;
+    background-image: url("../assets/fondoAside.jpg");
+    background-size: contain;
     margin-top: 80px;
+    opacity: 0.7;
     height: max-content;
+    
     .ultNoticias{
         a{
-            color: $c3;
+            color: $c4;
+            transition: font-size 0.5s;
+                
             &:hover{
-                color: $c4;
+                color: $c2;
+                font-size: 1.5rem;
             }
         }
         

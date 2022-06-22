@@ -1,5 +1,6 @@
 @media screen and (min-width: 0px) and (max-width:767px){
 
+
     @mixin imgResponsive ($height){
         position: relative;
         margin-right: 0px;
@@ -15,13 +16,13 @@
     }
 
     .imagen1{
+        animation: none;
         @include imgResponsive (7rem);
         
      }
 
-     @mixin colores2 ($bg, $tit, $text)
+     @mixin colores2 ($tit, $text)
      {
-        background-color: $bg;
         h3{
             color: $tit;
         }
@@ -30,31 +31,34 @@
         } 
      }
 
-     .nosotros{
-        @include colores2($bg5, $c2, $c5);
-        
-     }
-
      .imagen2{
         @include imgResponsive (4rem);
         
     }
+     .nosotros{
+        opacity: 0.8;
+        @include colores2($c6, $c5);
+     }
 
     .valores{
-        background-color: $bg5;
+        border-top: solid 0.4rem $c4;
+        opacity: 0.8;
         h3{
-            color: $c2;
+            color: $c6;
+            margin-top: 1rem;
         }
-        ul{
+        li{
             color: $c5;
         }
-    }
+        }
+    
 
     .servicios{
-        @include colores2($bg5, $c2, $c5);
+        opacity: 0.7;
+        @include colores2($c6, $c5);
         
         h4{
-            color: $c2;
+            color: $c6;
         }
             
         ul{
@@ -63,9 +67,10 @@
     }
 
     .ppalesServicios{
-        background-color: $bg5;
+        
         h3{
-            color: $c2;
+            color: $c6;
+            margin-top: 1rem;
         }
         ul{
             li{

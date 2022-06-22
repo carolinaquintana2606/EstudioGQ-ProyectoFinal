@@ -5,9 +5,9 @@
 }
 
 @keyframes img2 {
-    from{transform: translateY(-400px)
+    from{transform: translateY(-200px)
                     translateX(0px);}
-    to{transform: translateY(-400px)
+    to{transform: translateY(-200px)
                     translateX(400px);}
 }
 
@@ -38,6 +38,7 @@
     ul{
         color: $c3;
         li{
+            transition: font-size 0.5s;
             &:hover{
                 font-size:x-large; 
             }

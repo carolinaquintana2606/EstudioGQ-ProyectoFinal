@@ -1,9 +1,11 @@
 .footer{
-    background-color: $bg2;
-    color: $c3;
+    background-image: url("../assets/banner4.jpg");
+    opacity: 0.7;
+    color: $c2;
     .redes{
         a{
             img{
+                
                 &:hover{
                     width: 70px;
                     height: 80px;

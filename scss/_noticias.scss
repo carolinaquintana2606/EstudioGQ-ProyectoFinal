@@ -1,11 +1,15 @@
 .imagen3{
     
         @extend .imagen2;
-    
+    min-height: min-content;
     
 }
 
 .noticias{
+    background-color: $bg1;
+    background-size: contain;
+    opacity: 0.8;
+    padding-top: 2rem;
     .noticia{
         background-color: $bg2;
         &:hover{
