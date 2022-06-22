@@ -47,8 +47,6 @@ body {
     transform: translateX(0px); } }
   .imagen1 p {
     width: 42rem;
-    /*border: solid;
-        border-style: groove;*/
     background-color: #e0e4e4;
     opacity: 0.6;
     color: #789395;
@@ -78,8 +76,6 @@ body {
 
 .imagen2 h2, .imagen3 h2 {
   width: 42rem;
-  /*border: solid;
-        border-style: groove;*/
   background-color: #e0e4e4;
   opacity: 0.6;
   color: #789395;
