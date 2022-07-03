@@ -35,12 +35,12 @@ body {
     height: 80px; }
 
 .imagen1 {
-  animation-name: imgIndex;
+  animation-name: img;
   animation-duration: 2.4s;
   animation-delay: 0.3s;
   animation-fill-mode: forwards; }
 
-@keyframes imgIndex {
+@keyframes img {
   from {
     transform: translateX(250px); }
   to {
@@ -74,15 +74,20 @@ body {
       color: #789395;
       font-size: 1.5rem; }
 
-.imagen2 h2, .imagen3 h2 {
-  width: 42rem;
-  background-color: #e0e4e4;
-  opacity: 0.6;
-  color: #789395;
-  animation-name: img2;
-  animation-duration: 3s;
-  animation-delay: 0.1s;
+.imagen2, .imagen3 {
+  animation-name: img;
+  animation-duration: 2.4s;
+  animation-delay: 0.3s;
   animation-fill-mode: forwards; }
+  .imagen2 h2, .imagen3 h2 {
+    width: 42rem;
+    background-color: #e0e4e4;
+    opacity: 0.6;
+    color: #789395;
+    animation-name: img2;
+    animation-duration: 3s;
+    animation-delay: 0.1s;
+    animation-fill-mode: forwards; }
 
 @keyframes img2 {
   from {
@@ -161,6 +166,7 @@ form {
       left: 50%;
       transform: translate(-50%, -50%); }
   .imagen2, .imagen3 {
+    animation: none;
     position: relative;
     margin-right: 0px; }
     .imagen2 .textImg, .imagen3 .textImg {
@@ -201,6 +207,7 @@ form {
   .ppalesServicios ul li {
     color: #f0f8ff; }
   .imagen3 {
+    animation: none;
     position: relative;
     margin-right: 0px; }
     .imagen3 .textImg {
@@ -243,3 +250,12 @@ form {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%); } }
+
+.pag404 p {
+  color: #3f6a5f;
+  font-size: 4rem; }
+
+.pag404 a {
+  color: #789395; }
+  .pag404 a:hover {
+    color: #3f6a5f; }

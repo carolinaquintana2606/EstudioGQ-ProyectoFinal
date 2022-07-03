@@ -1,4 +1,8 @@
 .imagen2 {
+    animation-name: img;
+    animation-duration: 2.4s;
+    animation-delay: 0.3s;
+    animation-fill-mode: forwards;
     h2{
     @include estiloImg (img2);
     }

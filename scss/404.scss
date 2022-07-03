@@ -1,0 +1,12 @@
+.pag404{
+    p{
+        color: $c6;
+        font-size: 4rem;
+    }
+    a{
+        color: $c2;
+        &:hover{
+            color: $c6;
+        }
+    }
+}

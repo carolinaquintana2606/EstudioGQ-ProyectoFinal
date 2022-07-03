@@ -32,6 +32,7 @@
      }
 
      .imagen2{
+        animation: none;
         @include imgResponsive (4rem);
         
     }
@@ -81,6 +82,7 @@
     }
 
     .imagen3{
+        animation: none;
         @include imgResponsive (4rem);
     }
     
