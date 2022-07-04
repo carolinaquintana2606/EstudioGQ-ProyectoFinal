@@ -1,3 +1,0 @@
-- En todos los html sumé description y keywords.
-- Modifiqué los titulos de todos los html para que aparezca "Estudio G&Q | ..."
-- Cambié los nombres de las imagenes para que sean más descriptivos y agregué descripción de las mismas.
